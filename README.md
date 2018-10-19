@@ -30,6 +30,17 @@ Dim sb As StringBuilder
 Set sb = StringBuilder.Create("test", 32)
 ```
 
-Use the `Append` method to, well, *append* a string to the builder.
+Use the `Append` method to, well, *append* a string to the builder; use the `ToString` method to retrieve the string:
+
+```vb
+Dim sb As StringBuilder
+Set sb = StringBuilder.Create
+
+Dim i As Long
+For i = 1 To 100000
+    sb.Append "Test"
+Next
+Debug.Print sb.ToString
+```
 
 Instance members cannot be invoked from the *default instance*.
