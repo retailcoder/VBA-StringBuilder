@@ -1,0 +1,9 @@
+[project]
+name = "StringBuilder"
+version = "1.0.0"
+authors = ["Mathieu Guindon (retailcoder@gmail.com)"]
+license = "MIT"
+target = "xlsm"
+
+[src]
+StringBuilder = "src/StringBuilder.cls"
